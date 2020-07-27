@@ -15,16 +15,16 @@
         </header>
         <section>
             <h2>Vamos Verificar sua idade?</h2>
-            <input type="text" placeholder="Informe seu ano de nascimento" name="ano" id="ano" />
+            <input type="number" min="1870" max="2019" placeholder="Ano de nascimento" name="ano" id="ano" required />
            
             <h4>Selecione seu genero:</h4>
-            <fieldset id="genero">
+            <fieldset id="genero" >
             Masculino:<input type="radio" name="genero" value="M" />
             Feminino: <input type="radio" name="genero"  value="F" />
             </fieldset>
             <input type="button" onclick="verificaIdade()" value="Consultar" />
-            <h4 id='res'>Resultado</h4>
-            <img src="ima" id="imgIdade" alt="Imagem de comparação com idade" />
+            <h4 id='res'>Preeencha os campos de genêro e idade</h4>
+            <img src="imagens/IDADE-1.jpg" id="imgIdade" alt="Imagem de comparação com idade" />
         </section>
     </div>
     

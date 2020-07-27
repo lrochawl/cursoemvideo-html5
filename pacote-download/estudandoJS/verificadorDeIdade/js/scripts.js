@@ -6,7 +6,13 @@ function verificaIdade(){
     var genero   = document.querySelector('input[name="genero"]:checked').value
     var txtResp  = document.getElementById('res')
     var imgIdade = document.getElementById('imgIdade')
-
+    
+    if(idade > 150){
+        console.log(`[Erro ${Number(anoNasc.value)} ]Preencha corretamente o campo idade`)
+        txtResp.innerHTML = `[ Erro ${Number(anoNasc.value)} ] Preencha corretamente o campo idade 😞`
+        imgIdade.src = `imagens/erro.jpg`
+    } else{
+    
     if(idade < 3){
         txtResp.innerHTML = `Você tem apenas ${idade} anos de idade como você conseguiu realizar esta consulta? 😳`
         imgIdade.src = `imagens/0_2${genero}.png`
@@ -50,4 +56,5 @@ function verificaIdade(){
         console.log(`[ERRO ${idade}] Não conseguimos calcular sua idade atualize a pagina, verifique o preencimento correto do formulário e tente novamente`)
         txtResp.innerHTML = `[ERRO ${idade}] Não conseguimos calcular sua idade atualize a pagina, verifique o preencimento correto do formulário e tente novamente`
     }
+}
 }
