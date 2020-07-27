@@ -33,19 +33,19 @@ function verificaIdade(){
         imgIdade.src = `imagens/15_18${genero}.png`
 
     } else if(idade < 31){
-        txtResp.innerHTML = `você tem ${idade} anos de idade, aproveite bastante sua juventude e espero sinceramente que esteja alcançando os seus objetivos. 🤩`
+        txtResp.innerHTML = `Você tem ${idade} anos de idade, aproveite bastante sua juventude e espero sinceramente que esteja alcançando os seus objetivos. 🤩`
         imgIdade.src = `imagens/19_30${genero}.png`
 
     } else if(idade < 51){
-        txtResp.innerHTML = `você tem ${idade} anos de idade, você já tem muito conhecimento e experiência a compartilhas com  as pessoas e com certeza elas podem aprender muito com você. 😉`
+        txtResp.innerHTML = `Você tem ${idade} anos de idade, você já tem muito conhecimento e experiência a compartilhas com  as pessoas e com certeza elas podem aprender muito com você. 😉`
         imgIdade.src = `imagens/31_50${genero}.png`
 
     }else if(idade < 71){
-        txtResp.innerHTML = `você tem ${idade} anos de idade e caminhar por essa vida não é fácil e você com certeza já passou por grandes dificuldades e venceu todas elas e agora com toda sua experiencia que só lhe deixaram mais forte, agora você passara pelo proximos obstaculos com maior facilidade. Siga sempre em frente que a vitória é certa 🤗`
+        txtResp.innerHTML = `Você tem ${idade} anos de idade e caminhar por essa vida não é fácil e você com certeza já passou por grandes dificuldades e venceu todas elas e agora com toda sua experiencia que só lhe deixaram mais forte, agora você passara pelo proximos obstaculos com maior facilidade. Siga sempre em frente que a vitória é certa 🤗`
         imgIdade.src = `imagens/51_70${genero}.png`
 
     }else if(idade < 101){
-        txtResp.innerHTML = `você tem ${idade} anos de idade e nessa vida só temos apenas uma certeza é que vamos viver até o ultimo dia de nossas vidas, devemos ser gratos por cada dia que acordamos e nos levantamos pois é uma benção divina e que você é um dos poucos privilegiados por alcançar essa benção por ${idade} anos 🤗`
+        txtResp.innerHTML = `Você tem ${idade} anos de idade e nessa vida só temos apenas uma certeza é que vamos viver até o ultimo dia de nossas vidas, devemos ser gratos por cada dia que acordamos e nos levantamos pois é uma benção divina e que você é um dos poucos privilegiados por alcançar essa benção por ${idade} anos 🤗`
         imgIdade.src = `imagens/51_70${genero}.png`
 
     } else if(idade > 100){
