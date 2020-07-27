@@ -5,8 +5,12 @@ function verificaIdade(){
     var idade    = anoAtual - Number(anoNasc.value)
     var genero   = document.querySelector('input[name="genero"]:checked').value
     var txtResp  = document.getElementById('res')
+    var nome     = document.getElementById('nome')
     var imgIdade = document.getElementById('imgIdade')
     
+    if(nome == "Rodrigo"){
+
+    }
     if(idade > 150){
         console.log(`[Erro ${Number(anoNasc.value)} ]Preencha corretamente o campo idade`)
         txtResp.innerHTML = `[ Erro ${Number(anoNasc.value)} ] Preencha corretamente o campo idade 😞`
