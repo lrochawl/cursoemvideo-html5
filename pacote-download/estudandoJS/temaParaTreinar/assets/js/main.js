@@ -3,7 +3,46 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+function contar(){
+	let inicio = document.getElementById('inicio')
+	let fim	   = document.getElementById('fim')
+	let passo  = document.getElementById('passo')
+	let res	   = document.getElementById('res')
+	
+if(inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+	res.innerHTML = `Preencha corretamente todos os campos`
+	window.alert('Todos os campos precisam ser preenchidos')
+} else{
 
+	let i = Number(inicio.value)
+	let f = Number(fim.value)
+	let p = Number(passo.value)
+	res.innerHTML = ""
+	if( p <= 0){
+		res.innerHTML = "<p>O passo é menor que um e será considerado <strong>passo:</strong> 1 </p>"
+		p = 1
+	}
+	if(i < f){
+		do{ //contagem utilizando o 'do while'
+		
+			console.log(i)
+			res.innerHTML += `${i} \u{1F600} `
+			i = i + p
+		}while(i < f){
+			console.log('\u{1F3C1}')
+			
+		}
+	}else{
+		for(let c = i; c > f; c -= p){ //contagem regressiva utilizando for
+			console.log(i)
+			res.innerHTML += `${c} \u{1F600} `
+		}
+	}
+	res.innerHTML += `${i} \u{1F3C1} `	
+	}	
+	
+
+}
 (function($) {
 
 	var	$window = $(window),
